@@ -180,8 +180,19 @@ public class MyClass {
         //          {7,8,9}
         //          };
 
-        //calling the method created below. It must be called inside of the main method!
+        //Calling Methods from examples below:
+        //It must be called inside of the main method!
         sayHello();
+
+        //calling a method created below.
+        int w = addNumbers();
+        System.out.println("the value of 'w': "+w);
+        // it could also be written this way to return same results:
+        // System.out.println("the value of W: " +addNumbers());
+
+        // if a method is created with parameters, the corresponding values must be passed while calling the method.
+        System.out.println("the value of W: " +addNumbers(10, 20));
+
     }
 
     // methods: a method is a block of code that performs a specific task.
@@ -194,4 +205,22 @@ public class MyClass {
     static void sayHello(){
         System.out.println("my first method");
     }
-}
+    // a java method may or may not return a value to the function call.
+    //
+    static int addNumbers() {
+        int x = 10;
+        int y = 20;
+        int z = x + y;
+
+        return z;
+        // you could also write it this way:
+            // int x = 10;
+            // int y = 20;
+            // return x + y;
+    }
+    // a method parameter is a value accepted by the method and is placed inside the parentheses of the methodName().
+    // if a method is created with parameters, the corresponding values must be passed while calling the method.
+    static int addNumbers(int x, int y) {
+        return x + y;
+    }
+    }
