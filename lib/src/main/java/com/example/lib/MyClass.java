@@ -223,4 +223,29 @@ public class MyClass {
     static int addNumbers(int x, int y) {
         return x + y;
     }
+}
+    // method overloading
+    // multiple methods can have the same name with different parameters.
+
+    // Notes: java is an object-oriented programming language.
+    // The core concept of the object oriented approach is to break complex problems into smaller objects.
+    // an object is any entity that has a state and behavior.
+    // an object is an instance of a class.
+    //class ClassName {
+    // fields or states or attributes: store data
+        // methods or functionalities or behavior: perform operations
+    //}
+
+class Car {
+    // states
+    int year;
+    int speed;
+
+    // methods
+    void accelerate() {
+        speed +=10;
     }
+    void brake() {
+        speed -=5;
+    }
+}
