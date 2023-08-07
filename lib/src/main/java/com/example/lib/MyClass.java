@@ -179,5 +179,19 @@ public class MyClass {
         //          {4,5,6},
         //          {7,8,9}
         //          };
+
+        //calling the method created below. It must be called inside of the main method!
+        sayHello();
+    }
+
+    // methods: a method is a block of code that performs a specific task.
+    // The two types of methods are: User-defined methods and Standard Library Methods.
+    // The "returnType" specifies what type of value a method returns.
+    // Declaring a java method:
+        // returnType methodName(){
+        //      method body
+        // }
+    static void sayHello(){
+        System.out.println("my first method");
     }
 }
