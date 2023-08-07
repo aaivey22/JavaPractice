@@ -193,6 +193,14 @@ public class MyClass {
         // if a method is created with parameters, the corresponding values must be passed while calling the method.
         System.out.println("the value of W: " +addNumbers(10, 20));
 
+        // creating an object of the class car called redCar. Notes on objects are further down outside of the Main method.
+        Car redCar = new Car();
+        redCar.speed = 180;
+        redCar.year = 1988;
+        redCar.accelerate();
+        redCar.accelerate();
+        redCar.brake();
+
     }
 
     // methods: a method is a block of code that performs a specific task.
@@ -223,6 +231,7 @@ public class MyClass {
     static int addNumbers(int x, int y) {
         return x + y;
     }
+
 }
     // method overloading
     // multiple methods can have the same name with different parameters.
@@ -231,6 +240,9 @@ public class MyClass {
     // The core concept of the object oriented approach is to break complex problems into smaller objects.
     // an object is any entity that has a state and behavior.
     // an object is an instance of a class.
+    // a class is a template or blueprint.
+    // syntax of class creation:
+    // className object = new className();
     //class ClassName {
     // fields or states or attributes: store data
         // methods or functionalities or behavior: perform operations
@@ -244,8 +256,10 @@ class Car {
     // methods
     void accelerate() {
         speed +=10;
+        System.out.println("new speed is: "+speed);
     }
     void brake() {
         speed -=5;
+        System.out.println("new speed is: "+speed);
     }
 }
