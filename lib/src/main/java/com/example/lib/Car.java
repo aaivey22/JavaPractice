@@ -31,6 +31,15 @@ public class Car{
     public int year;
     public int speed;
 
+    // helper methods like getters and setters allow you to indirectly retrieve and modify "private" variables from other classes
+    // Getters & Setters
+    public int getYear(){
+        return year;
+    }
+    public void setYear(int newYear){
+        year = newYear;
+    }
+
     // methods
     public void accelerate() {
         speed += 10;
