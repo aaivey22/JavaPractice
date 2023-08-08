@@ -1,4 +1,6 @@
 package com.example.lib;
+import anotherPack.Test;
+
 
 public class MyClass {
     // the main method is the entry point for the program
@@ -194,12 +196,14 @@ public class MyClass {
         System.out.println("the value of W: " +addNumbers(10, 20));
 
         // creating an object of the class car called redCar. Notes on objects are further down outside of the Main method.
-        Car redCar = new Car();
-        redCar.speed = 180;
-        redCar.year = 1988;
+        Car redCar = new Car(188,1988);
+        redCar.speed = 90;
         redCar.accelerate();
         redCar.accelerate();
         redCar.brake();
+
+        Test newTest = new Test();
+        newTest.justTesting();
 
     }
 
@@ -230,36 +234,5 @@ public class MyClass {
     // if a method is created with parameters, the corresponding values must be passed while calling the method.
     static int addNumbers(int x, int y) {
         return x + y;
-    }
-
-}
-    // method overloading
-    // multiple methods can have the same name with different parameters.
-
-    // Notes: java is an object-oriented programming language.
-    // The core concept of the object oriented approach is to break complex problems into smaller objects.
-    // an object is any entity that has a state and behavior.
-    // an object is an instance of a class.
-    // a class is a template or blueprint.
-    // syntax of class creation:
-    // className object = new className();
-    //class ClassName {
-    // fields or states or attributes: store data
-        // methods or functionalities or behavior: perform operations
-    //}
-
-class Car {
-    // states
-    int year;
-    int speed;
-
-    // methods
-    void accelerate() {
-        speed +=10;
-        System.out.println("new speed is: "+speed);
-    }
-    void brake() {
-        speed -=5;
-        System.out.println("new speed is: "+speed);
     }
 }
